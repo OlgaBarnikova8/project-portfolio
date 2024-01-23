@@ -1,0 +1,47 @@
+@import '../../node_modules/swiper/swiper-bundle';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap' );
+@import url('https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:500;700&display=swap' );
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    color: #232e35;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container { 
+    max-width: 1240px;
+    margin: 0 auto; 
+    padding: 0 32px;    
+    @media (max-width: 991.98px) {  
+        padding: 0 32px;  
+    }
+    @media (max-width: 767.98px) {        
+        max-width: none;
+        padding: 0 16px;
+    }  
+}
+
+a {
+      text-decoration: none;
+      &:hover {
+            color: #be85a8;  
+            transition: ease 0.7s;
+            transform: scale(1.1);
+      }
+}
