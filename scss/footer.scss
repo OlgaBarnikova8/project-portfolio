@@ -8,6 +8,9 @@
         margin: 44px 0;
     } 
     &__social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin-bottom: 24px;
     }
     &__copyright {
