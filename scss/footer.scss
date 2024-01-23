@@ -2,16 +2,13 @@
 @import "../scss/style.scss";
 
 .footer {
-    margin: 88px 0;
-    text-align: center;
-    @media (max-width: $mobile) {      
-        margin: 44px 0;
-    } 
+    margin: 10px 0;
+    text-align: center;    
     &__social {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 24px;
+        margin-bottom: 10px;
     }
     &__copyright {
         color:$gray;
