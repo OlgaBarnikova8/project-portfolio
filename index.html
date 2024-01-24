@@ -107,20 +107,23 @@
     </section>   
     <section id="portfolios" class="portfolios">
         <div class="container">
-            <div class="portfolios__content"> 
-                <div class="portfolios__header">
-                    <p class="portfolios__above above__title">MY WORKS</p>
-                    <h2 class="portfolios__title title">Featured Portfolios</h2>  
-                </div>                              
-                <div class="portfolios__control">
-                    <button type="button" class="portfolios__arrow portfolio__arrow-left">                        
-                        <img src="images/sprite.svg#portfolios-nav" class="portfolios-nav portfolios-nav-left" alt="arrow">
-                    </button>
-                    <button type="button" class="portfolios__arrow portfolio__arrow-right">
-                        <img src="images/sprite.svg#portfolios-nav" class="portfolios-nav portfolios-nav-right" alt="arrow">
-                    </button>                    
-                </div>               
-                <div class="portfolios-swiper swiper">                    
+            <div class="portfolios__container">    
+                <div class="portfolios-swiper swiper">  
+                    <div class="portfolios__head">
+                        <div class="portfolios__header">
+                            <p class="portfolios__above above__title">MY WORKS</p>
+                            <h2 class="portfolios__title title">Featured Portfolios</h2>  
+                        </div>
+                        <div class="portfolios__control">
+                            <button type="button" class="portfolios__arrow portfolio__arrow-left">                        
+                                <img src="images/sprite.svg#portfolios-nav" class="portfolios-nav portfolios-nav-left" alt="arrow">
+                            </button>
+                            <button type="button" class="portfolios__arrow portfolio__arrow-right">
+                                <img src="images/sprite.svg#portfolios-nav" class="portfolios-nav portfolios-nav-right" alt="arrow">
+                            </button>                    
+                        </div> 
+                    </div>                               
+                                     
                     <div class="swiper-wrapper portfolios-wrapper">
                         <div class="swiper-slide portfolios-slide">
                             <div class="portfolios__image">
@@ -156,12 +159,13 @@
                         </div>                        
                     </div>                   
                 </div>
-            </div>             
+                
+            </div>            
         </div>
     </section> 
     <section id="experience" class="experience">
         <div class="container">
-            <div class="experience__container">
+            <div class="experience__container container__content">
                 <div class="experience__header">
                     <p class="experience__above above__title">career path</p>
                     <h2 class="experience__title title">Work Experience</h2>
@@ -213,7 +217,7 @@
     </section>   
     <section id="blog" class="blog">
         <div class="container">
-            <div class="blog__container">
+            <div class="blog__container container__content">
                 <div class="blog__content">
                     <p class="blog__above above__title">MY ARTICLES</p>
                     <h2 class="blog__title title">Personal Blog</h2>
@@ -252,7 +256,7 @@
     </section>   
     <section id="education" class="education">
         <div class="container">
-            <div class="education__container">
+            <div class="education__container container__content">
                 <div class="education__header">
                     <p class="education__above above__title">LEARNING PATH</p>
                     <h2 class="education__title title">Education & Skills</h2>
@@ -302,35 +306,151 @@
             </div>
         </div>
     </section>                                    
+
+<section id="contacts" class="contacts">
+
+    <div class="contacts__container">
+
+        <div class="container">
+
+            <div class="contacts__body">
+
+                <form name="form-contacts" class="form" method="post"> 
+
+                    <div class="form__body">
+
+                        <p class="error-name"></p> 
+
+                        <input class="form__info" id="name" name="name" type="text" placeholder="Name" required>
+
+                        <p class="error-phone"></p>
+
+                        <input class="form__info" id="email" name="email" type="email" placeholder="Email" required>
+
+                        <textarea class="form__info form__text" id="message" name="message" type="text" placeholder="Message"></textarea>
+
+                        <button class="form__button" id="submit-btn" type="submit">Send Message</button>
+
+                    </div>                    
+
+                </form>    
+
+                <div class="contacts__column">
+
+                    <ul class="contacts__list">
+
+                        <li class="contacts__list-item">
+
+                            <div class="contacts__list-icon">
+
+                                <img src="images/sprite.svg#adress" alt="adress">   
+
+                            </div>
+
+                            <div class="contacts__list-content">
+
+                                <h4 class="contacts__list-title">Address</h4>
+
+                                <p class="contacts__list-name">Ukraine, Odesa</p>
+
+                            </div>
+
+                        </li>
+
+                        <li class="contacts__list-item">
+
+                            <div class="contacts__list-icon">
+
+                                <img src="images/sprite.svg#phone" alt="phone">   
+
+                            </div>
+
+                            <div class="contacts__list-content">
+
+                                <h4 class="contacts__list-title">Phone</h4>
+
+                                <p class="contacts__list-name"><a href="tel:+380963302602">+38 096 330 26 02</a></p>
+
+                            </div>
+
+                        </li>
+
+                        <li class="contacts__list-item">
+
+                            <div class="contacts__list-icon">
+
+                                <img src="images/sprite.svg#mail" alt="mail">   
+
+                            </div>
+
+                            <div class="contacts__list-content">
+
+                                <h4 class="contacts__list-title">E-Mail</h4>                            
+
+                                <p class="contacts__list-name"><a href="mailto:barnikovaolga8@gmail.com">barnikovaolga8@gmail.com</a></p>
+
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>  
+
+            <footer class="footer">
+
+                <div class="footer__social">
+
+                    <a href="https://www.linkedin.com/in/olga-barnikova/" target="_blank">
+
+                        <img src="images/sprite.svg#social-linkedin" alt="linkedin">                                       
+
+                    </a>
+
+                    <a href="https://www.facebook.com/barnikova.olga" target="_blank">
+
+                        <img src="images/sprite.svg#social-facebook" alt="facebook">                                          
+
+                    </a> 
+
+                    <a href="https://t.me/olgabarnikova" target="_blank">
+
+                        <img src="images/sprite.svg#social-telegram" alt="telegram">                                       
+
+                    </a>
+
+                    <a href="https://github.com/OlgaBarnikova8" target="_blank">
+
+                        <img src="images/sprite.svg#social-github" alt="github">
+
+                    </a> 
+
+                </div>
+
+                <div class="footer__copyright">
+
+                    <p class="footer__text">2024 &copy All rights reserved </p>
+
+                </div>
+
+            </footer>          
+
+        </div>        
+
+    </div>    
+
+</section>
+
 </main>
-<footer class="footer">
-    <div class="footer__social">
-        <a href="https://www.linkedin.com/in/olga-barnikova/" target="_blank">
-            <div class="social">                               
-                <img src="images/sprite.svg#social-linkedin" alt="linkedin">                                
-            </div>                            
-        </a>
-        <a href="https://www.facebook.com/barnikova.olga" target="_blank">
-            <div class="social">                               
-                <img src="images/sprite.svg#social-facebook" alt="facebook">                                
-            </div>                             
-        </a> 
-        <a href="https://t.me/olgabarnikova" target="_blank">
-            <div class="social">                               
-                <img src="images/sprite.svg#social-telegram" alt="telegram">                                
-            </div>                             
-        </a>
-        <a href="https://github.com/OlgaBarnikova8" target="_blank">
-            <div class="social">                               
-                <img src="images/sprite.svg#social-github" alt="github">                                
-            </div> 
-        </a> 
-    </div>
-    <div class="footer__copyright">
-        <p class="footer__text">2024 &copy All rights reserved </p>
-    </div>
-</footer>
+
+</div>
+
 <script src="js/main.min.js"></script>
+
 </body>
+
 </html>
+
 

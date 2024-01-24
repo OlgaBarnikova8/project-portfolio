@@ -1,30 +1,73 @@
-<footer class="footer">
-    <div class="footer__social">
-        <a href="https://www.linkedin.com/in/olga-barnikova/" target="_blank">
-            <div class="social">                               
-                <img src="images/sprite.svg#social-linkedin" alt="linkedin">                                
-            </div>                            
-        </a>
-        <a href="https://www.facebook.com/barnikova.olga" target="_blank">
-            <div class="social">                               
-                <img src="images/sprite.svg#social-facebook" alt="facebook">                                
-            </div>                             
-        </a> 
-        <a href="https://t.me/olgabarnikova" target="_blank">
-            <div class="social">                               
-                <img src="images/sprite.svg#social-telegram" alt="telegram">                                
-            </div>                             
-        </a>
-        <a href="https://github.com/OlgaBarnikova8" target="_blank">
-            <div class="social">                               
-                <img src="images/sprite.svg#social-github" alt="github">                                
-            </div> 
-        </a> 
-    </div>
-    <div class="footer__copyright">
-        <p class="footer__text">2024 &copy All rights reserved </p>
-    </div>
-</footer>
+<section id="contacts" class="contacts">
+    <div class="contacts__container">
+        <div class="container">
+            <div class="contacts__body">
+                <form name="form-contacts" class="form" method="post"> 
+                    <div class="form__body">
+                        <p class="error-name"></p> 
+                        <input class="form__info" id="name" name="name" type="text" placeholder="Name" required>
+                        <p class="error-phone"></p>
+                        <input class="form__info" id="email" name="email" type="email" placeholder="Email" required>
+                        <textarea class="form__info form__text" id="message" name="message" type="text" placeholder="Message"></textarea>
+                        <button class="form__button" id="submit-btn" type="submit">Send Message</button>
+                    </div>                    
+                </form>    
+                <div class="contacts__column">
+                    <ul class="contacts__list">
+                        <li class="contacts__list-item">
+                            <div class="contacts__list-icon">
+                                <img src="images/sprite.svg#adress" alt="adress">   
+                            </div>
+                            <div class="contacts__list-content">
+                                <h4 class="contacts__list-title">Address</h4>
+                                <p class="contacts__list-name">Ukraine, Odesa</p>
+                            </div>
+                        </li>
+                        <li class="contacts__list-item">
+                            <div class="contacts__list-icon">
+                                <img src="images/sprite.svg#phone" alt="phone">   
+                            </div>
+                            <div class="contacts__list-content">
+                                <h4 class="contacts__list-title">Phone</h4>
+                                <p class="contacts__list-name"><a href="tel:+380963302602">+38 096 330 26 02</a></p>
+                            </div>
+                        </li>
+                        <li class="contacts__list-item">
+                            <div class="contacts__list-icon">
+                                <img src="images/sprite.svg#mail" alt="mail">   
+                            </div>
+                            <div class="contacts__list-content">
+                                <h4 class="contacts__list-title">E-Mail</h4>                            
+                                <p class="contacts__list-name"><a href="mailto:barnikovaolga8@gmail.com">barnikovaolga8@gmail.com</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>  
+            <footer class="footer">
+                <div class="footer__social">
+                    <a href="https://www.linkedin.com/in/olga-barnikova/" target="_blank">
+                        <img src="images/sprite.svg#social-linkedin" alt="linkedin">                                       
+                    </a>
+                    <a href="https://www.facebook.com/barnikova.olga" target="_blank">
+                        <img src="images/sprite.svg#social-facebook" alt="facebook">                                          
+                    </a> 
+                    <a href="https://t.me/olgabarnikova" target="_blank">
+                        <img src="images/sprite.svg#social-telegram" alt="telegram">                                       
+                    </a>
+                    <a href="https://github.com/OlgaBarnikova8" target="_blank">
+                        <img src="images/sprite.svg#social-github" alt="github">
+                    </a> 
+                </div>
+                <div class="footer__copyright">
+                    <p class="footer__text">2024 &copy All rights reserved </p>
+                </div>
+            </footer>          
+        </div>        
+    </div>    
+</section>
+</main>
+</div>
 <script src="js/main.min.js"></script>
 </body>
 </html>

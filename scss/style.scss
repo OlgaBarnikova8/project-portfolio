@@ -38,10 +38,11 @@ body {
 }
 
 a {
-      text-decoration: none;
-      &:hover {
-            color: #be85a8;  
-            transition: ease 0.7s;
-            transform: scale(1.1);
-      }
+    text-decoration: none;
+    transition: transform 0.8s ease 0s;   
+    &:hover {
+        color: #be85a8;  
+        transition: ease 0.7s;
+        transform: scale(1.1);        
+    }
 }

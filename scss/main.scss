@@ -84,11 +84,6 @@
     -ms-overflow-style: none;    
 }
 
-/*.scroller::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-}*/
-  
 .scroller section {
     scroll-snap-align: center;
     height: 100vh;    
@@ -212,9 +207,23 @@
 
 
 /*Portfolios========================================*/
-.portfolios {      
-    padding-top: 115px;
-    height: calc(100vh);       
+.portfolios { 
+    &__container {
+        display: flex;        
+        align-items: center; 
+        justify-content: center;
+        height: calc(100vh); 
+    }   
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10%;
+        @media (max-width: $mobile) {
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center;
+        }
+    }  
     &__control {
         text-align: right;  
         @media (max-width: $mobile) {
@@ -239,11 +248,9 @@
         border-radius: 16px;
         background-color: #EAE6FE;           
     }
-    &-swiper {
-        margin-top: 100px;
+    &-swiper {        
         @media (max-width: $mobile) {
-            text-align: center; 
-            margin-top: 50px;           
+            text-align: center;                 
         } 
     }
     &__image {
@@ -286,9 +293,11 @@
 
 
 /*Experience============================*/
-.experience { 
-    padding-top: 115px;
-    height: 100vh;    
+.experience {  
+    &__container {
+        flex-direction: column;  
+        gap: 5%;
+    }
     &__title {
         margin-bottom: 25px;
         @media (max-width: $mobile) {
@@ -429,8 +438,6 @@
 
 /*Blog=====================================*/
 .blog {  
-    padding-top: 115px;
-    height: 100vh;  
     &__above {        
         text-align: center;
     }
@@ -512,8 +519,10 @@
 
 /*Education=================================*/
 .education {
-    padding-top: 115px;
-    height: 100vh;       
+    &__container {
+        flex-direction: column;  
+        gap: 5%;
+    }    
     &__title {        
         margin-bottom: 50px;
     }
