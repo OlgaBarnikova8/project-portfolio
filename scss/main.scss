@@ -260,6 +260,7 @@
         transition: opacity 0.8s ease 0s;
         img {
             width: 361px;
+            height: 175px;
             border-radius: 8px;
             object-position: top;
             opacity: 0.8;
@@ -400,7 +401,7 @@
 }
 
 .experience__companies.active {
-    color: $purple;
+    color: #FFF;
     background-color: $pink;
     border-radius: 4px;
     @media (max-width: $mobile) {
